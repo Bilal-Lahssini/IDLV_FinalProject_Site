@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  --font-bold: 700;
+}
+
+:root {
+  --first-color: #E55947;
+  --first-color-alt: #D2321E;
+  --white-color: #FAFAFF;
+  --dark-color: #101010;
+  --dark-color-light: #606060;
+  --gray-color: #F0F1F3;
+}
+
+:root {
+  --body-font: 'Inter', 'sans-serif';
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 6rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+  }
+}
+
+:root {
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+}
+
+:root {
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+h1, h2, p {
+  margin: 0;
+  margin-right: px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== CLASS CSS ===== */
+.section
+{
+  padding: 3rem 0;
+}
+
+.section-title
+{
+  font-size: var(--h2-font-size);
+  color: var(--dark-color);
+  margin: var(--mb-4) 0 var(--mb-1);
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.section-all
+{
+  display: block;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi);
+  color: var(--dark-color-light);
+  text-align: center;
+  margin-bottom: var(--mb-2);
+}
+
+.bd-grid
+{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.l-header
+{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background: gray;
+}
+
+
+.nav
+{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo img{
+  width: 60px;
+  height: 70px;
+}
+
+.over__bg{
+  margin-left: 5%;
+}
+
+.over__bgtwee{
+  margin-left: 5%;
+  margin-bottom: -5%;
+}
+
+.over__description {
+  text-align: left;
+  margin-right: 10%;
+  font-size: 20px;
+  margin-left: 30%;
+}
+
+.over__img{
+
+    width: 400px;
+    margin-top: -10em;
+    margin-bottom: 80px;
+  }
+
+  .over__descriptiontwee {
+    text-align: left;
+    margin-right: 10%;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-right: 50%;
+  }
+  
+  .over__imgtwee{
+      margin-left: 75em;
+      width: 600px;
+      margin-top: -15em;
+    }
+    .columns {
+      float: left;
+      width: 33.3%;
+      padding: 80px;
+    }
+    
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+    
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+    
+    .price .header {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+    }
+    
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .price .grey {
+      background-color: #eee;
+      font-size: 20px;
+    }
+    
+    .button {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    .container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column img{
+  margin-left: 20%;
+  margin-top: -10%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.biografieBilal {
+  position: absolute;
+  margin-left: 35%;
+  margin-right: 50%;
+  margin-top: -2%;
+}
+
+.socialsm{
+  margin-left: 12%;
+}
+
+.home__img
+{
+  margin-left: 90%;
+  margin-top: -40%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .nav__menu
+  {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--white-color);
+    transition: .5s;
+  }
+
+  .nav__item
+  {
+    margin-bottom: var(--mb-4);
+  }
+
+  .nav__link
+  {
+    color: var(--dark-color);
+    font-weight: var(--font-semi);
+  }
+
+  .nav__link:hover
+  {
+    color: var(--first-color);
+  }
+
+  .nav__toggle
+  {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .over__description{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .over__descriptiontwee{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .over__imgtwee{
+    margin-left: 3em;
+    width: 400px;
+    margin-top: 5em;
+  }
+
+  .over__img{
+    width: 300px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .columns {
+    float: none; 
+    width: 100%; 
+    padding: 20px; 
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 20px; 
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 10px; 
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 18px; 
+  }
+  
+  .button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 20px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px; 
+  }
+
+  .column{
+  float: left;
+  width: 70%;
+  margin-top: 50%;
+  padding: 20px;
+  }
+
+  .column img{
+    margin-left: 20%;
+    margin-top: -10%;
+  }
+  
+  
+  .biografieBilal {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .socialsm{
+    margin-left: 30%;
+    width: 150px;
+  }
+
+  .home__img
+{
+  margin-left: 0;
+  margin-top: 0;
+}
+  
+}
+
+
+/*=== Show menu ===*/
+.show
+{
+  right: 0;
+}
+
+.active
+{
+  color: rgb(0, 0, 0);
+}
+
+/*===== HOME =====*/
+.home
+{
+  background-color: var(--gray-color);
+}
+
+
+.home__container
+{
+  height: calc(100vh - var(--header-height));
+}
+
+.home__data
+{
+  padding-top: 6rem;
+}
+
+.home__title
+{
+  align-self: center;
+  font-size: var(--big-font-size);
+  line-height: 1;
+  letter-spacing: .5rem;
+  margin-bottom: 4rem;
+}
+
+.home__title span
+{
+  font-size: var(--h1-font-size);
+}
+
+
+.button
+{
+  display: inline-block;
+  background-color: black;
+  color: var(--white-color);
+  padding: 1rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi);
+  transition: .3s;
+}
+
+.button:hover
+{
+  background-color: var(--first-color-alt);
+}
+
+
+.footer
+{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.footer__container
+{
+  row-gap: 1.5rem;
+  margin-bottom: var(--mb-4);
+}
+
+.footer__copy
+{
+  text-align: center;
+  font-size: var(--small-font-size);
+}
+
+@media screen and (min-width: 768px)
+{
+  body
+  {
+    margin: 0;
+  }
+
+  .section-all
+  {
+    margin-bottom: var(--mb-4);
+  }
+
+  .nav
+  {
+    height: calc(var(--header-height) + 1rem);
+    justify-content: initial;
+  }
+
+
+  .nav__list
+  {
+    display: flex;
+  }
+
+  .nav__item
+  {
+    margin-left: var(--mb-4);
+    margin-bottom: 0;
+  }
+
+  .nav__toggle
+  {
+    display: none;
+  }
+
+  .home__container
+  {
+    height: 100vh;
+  }
+
+  .home__data
+  {
+    padding: 0;
+    height: max-content;
+    align-self: center;
+  }
+
+  .home__title
+  {
+    line-height: .8;
+  }
+
+  .home__img
+  {
+    width: auto;
+  }
+
+
+  .footer__container
+  {
+    padding: 2rem 0;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px)
+{
+  .bd-grid
+  {
+    margin-left: 5em;
+    margin-right: auto;
+  }
+
+
+  .home__img
+  {
+    right: 5%;
+    top: 30%;
+    width: 800px;
+  }
+}
